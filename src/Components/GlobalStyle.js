@@ -3,9 +3,11 @@ import reset from "styled-reset";
 export const GlobalStyles = createGlobalStyle`
     ${reset};
 
-    
+    * {
+        box-sizing:border-box;
+      };
     body{
 
         object-fit:cover;
-    }
+    };
 `;
