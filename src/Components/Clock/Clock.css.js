@@ -8,6 +8,9 @@ export const Frame = styled.div`
   flex-direction: column;
   font-size: 70px;
   font-weight: bold;
+  background-image: url("images/fog.jpg");
+  background-size: cover;
+  color: white;
 `;
 export const Clock = styled.div``;
 export const Greet = styled.div`
