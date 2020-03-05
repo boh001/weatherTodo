@@ -8,7 +8,7 @@ export const Frame = styled.div`
   flex-direction: column;
   font-size: 70px;
   font-weight: bold;
-  background-image: url("images/fog.jpg");
+  background-image: url(${props => `images/${props.src}.jpg`});
   background-size: cover;
   color: white;
 `;

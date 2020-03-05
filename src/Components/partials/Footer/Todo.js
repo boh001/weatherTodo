@@ -1,29 +1,25 @@
-import React, { useCallback } from "react";
+import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { showLists } from "./Footer.js.js";
 
-const TodoFrame = styled.div`
-  width: 100%;
+const Frame = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 `;
-const Todo = styled.div`
-  width: 100px;
-  cursor: pointer;
+const Checkbox = styled.input.attrs({
+  type: "checkbox"
+})`
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  background-color: none;
+  color: green;
 `;
-const SPAN = styled.span`
-  margin: 0px 5px 0px 5px;
-`;
-
-export default () => {
+export default ({ todo }) => {
   return (
-    <>
-      <TodoFrame>
-        <Todo onClick={e => showLists(e)}>
-          <FontAwesomeIcon icon={faBars} size="md" />
-          <SPAN>Todo</SPAN>
-        </Todo>
-      </TodoFrame>
-    </>
+    <Frame>
+      <Checkbox />
+      {todo}
+    </Frame>
   );
 };
