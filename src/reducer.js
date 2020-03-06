@@ -1,5 +1,3 @@
-import { useReducer } from "react";
-
 export const clockReducer = (state, action) => {
   const date = new Date();
   const h = date.getHours();

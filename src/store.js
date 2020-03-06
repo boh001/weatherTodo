@@ -10,11 +10,24 @@ export const Weather = ({
   clouds,
   temp,
   humidity,
-  children
+  children,
+  time,
+  greet
 }) => {
   return (
     <WContext.Provider
-      value={{ main, country, weather, city, wind, clouds, temp, humidity }}
+      value={{
+        main,
+        country,
+        weather,
+        city,
+        wind,
+        clouds,
+        temp,
+        humidity,
+        time,
+        greet
+      }}
     >
       {children}
     </WContext.Provider>

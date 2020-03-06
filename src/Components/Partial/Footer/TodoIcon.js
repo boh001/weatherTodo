@@ -15,6 +15,8 @@ const SPAN = styled.span`
 `;
 
 export default () => {
+  console.log("todoIcon");
+
   const showLists = useCallback(e => {
     e.preventDefault();
     const sideBar = document.querySelector("#sideBar");

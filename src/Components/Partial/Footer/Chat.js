@@ -16,6 +16,8 @@ const SPAN = styled.span`
 `;
 
 export default () => {
+  console.log("chat");
+
   return (
     <ChatFrame>
       <Chat>

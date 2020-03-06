@@ -3,6 +3,8 @@ import Todo from "./Todo";
 import { TodoList, TodoTheme, ToDos, ListInput } from "./SideBar.style";
 
 export default React.memo(() => {
+  console.log("SideBar");
+
   if (!localStorage.getItem("todo")) {
     localStorage.setItem("todo", JSON.stringify([]));
   }

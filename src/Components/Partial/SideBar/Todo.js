@@ -19,6 +19,8 @@ const Checkbox = styled.input.attrs({
   color: green;
 `;
 export default ({ todo }) => {
+  console.log("todo");
+
   return (
     <Frame>
       <Checkbox />

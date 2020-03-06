@@ -3,7 +3,9 @@ import TodoIcon from "./TodoIcon";
 import Chat from "./Chat";
 import { Footer, Ment } from "./Footer.style";
 
-export default () => {
+export default React.memo(() => {
+  console.log("footer");
+
   return (
     <Footer>
       <TodoIcon />
@@ -11,4 +13,4 @@ export default () => {
       <Chat />
     </Footer>
   );
-};
+});

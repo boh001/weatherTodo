@@ -18,6 +18,8 @@ import {
 dotenv.config();
 
 export default () => {
+  console.log("header");
+
   const { country, weather, city, wind, clouds, temp, humidity } = useW();
   return (
     <Header>

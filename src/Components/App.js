@@ -16,7 +16,9 @@ export default class extends React.Component {
       wind: "",
       clouds: "",
       temp: "",
-      humidity: ""
+      humidity: "",
+      time: "",
+      greet: ""
     };
   }
   componentDidMount() {
@@ -36,6 +38,24 @@ export default class extends React.Component {
           clouds: { all }
         }
       } = await axios.post(url);
+      const date = new Date();
+      const h = date.getHours();
+      const m = date.getMinutes();
+      const s = date.getSeconds();
+      const time = `${h < 10 ? `0${h}` : h} : ${m < 10 ? `0${m}` : m} : ${
+        s < 10 ? `0${s}` : s
+      }`;
+      const greet = `${
+        h > 21
+          ? "Good night"
+          : h > 18
+          ? "Good evening"
+          : h > 12
+          ? "Good afternoon"
+          : h > 6
+          ? "Good morning"
+          : "Good night"
+      }`;
       this.setState({
         main: weather[0].main,
         country,
@@ -44,12 +64,14 @@ export default class extends React.Component {
         wind: speed,
         clouds: all,
         temp,
-        humidity
+        humidity,
+        time,
+        greet
       });
     };
     setInterval(() => {
       navigator.geolocation.getCurrentPosition(success);
-    }, 5000);
+    }, 1000);
   }
   render() {
     const {
@@ -60,7 +82,9 @@ export default class extends React.Component {
       wind,
       clouds,
       temp,
-      humidity
+      humidity,
+      time,
+      greet
     } = this.state;
     return (
       <>
@@ -74,6 +98,8 @@ export default class extends React.Component {
           weather={weather}
           temp={temp}
           humidity={humidity}
+          time={time}
+          greet={greet}
         >
           <Router />
         </Weather>
