@@ -32,7 +32,7 @@ export default () => {
     <>
       <TodoFrame>
         <Todo onClick={e => showLists(e)}>
-          <FontAwesomeIcon icon={faBars} size="md" />
+          <FontAwesomeIcon icon={faBars} size="lg" />
           <SPAN>Todo</SPAN>
         </Todo>
       </TodoFrame>

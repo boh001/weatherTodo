@@ -9,7 +9,7 @@ export default React.memo(() => {
   return (
     <Footer>
       <TodoIcon />
-      <Ment>hi</Ment>
+      <Ment></Ment>
       <Chat />
     </Footer>
   );

@@ -1,6 +1,12 @@
 import React, { useCallback, useState } from "react";
 import Todo from "./Todo";
-import { TodoList, TodoTheme, ToDos, ListInput } from "./SideBar.style";
+import {
+  TodoList,
+  TodoTheme,
+  ToDos,
+  ListInput,
+  InputLabel
+} from "./SideBar.style";
 
 export default React.memo(() => {
   console.log("SideBar");
@@ -32,6 +38,7 @@ export default React.memo(() => {
       </ToDos>
 
       <ListInput onKeyUp={e => addTodo(e)} />
+      <InputLabel>Title</InputLabel>
     </TodoList>
   );
 });

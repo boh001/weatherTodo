@@ -3,6 +3,8 @@ import { GlobalStyles } from "./Global/GlobalStyle";
 import Router from "./Router";
 import { Weather } from "store";
 import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
 
 export default class extends React.Component {
   constructor(props) {
@@ -26,7 +28,7 @@ export default class extends React.Component {
       const {
         coords: { latitude, longitude }
       } = pos;
-      const apiKey = "c11aac16b89eb6674bf9b243876f48f9";
+      const apiKey = process.env.REACT_APP_APIKEY;
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
       const {
         data: {

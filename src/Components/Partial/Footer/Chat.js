@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCommentAlt } from "@fortawesome/free-regular-svg-icons";
+import { faCog } from "@fortawesome/free-solid-svg-icons";
 
 const ChatFrame = styled.div`
   display: flex;
@@ -21,8 +21,7 @@ export default () => {
   return (
     <ChatFrame>
       <Chat>
-        <SPAN>Chat</SPAN>
-        <FontAwesomeIcon icon={faCommentAlt} size="md" />
+        <FontAwesomeIcon icon={faCog} size="lg" />
       </Chat>
     </ChatFrame>
   );
