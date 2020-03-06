@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "Routes/Home";
-import Header from "./partials/Header";
-import Footer from "./partials/Footer/Footer";
-import SideBar from "./partials/SideBar";
+import Me from "Routes/Me";
+import Header from "./Partial/Header/Header";
+import Footer from "./Partial/Footer/Footer";
+import SideBar from "./Partial/SideBar/SideBar";
 export default () => {
   return (
     <Router>
@@ -11,7 +12,8 @@ export default () => {
         <Header />
         <SideBar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/Home" exact component={Home} />
+          <Route path="/me" exact component={Me} />
         </Switch>
         <Footer />
       </>

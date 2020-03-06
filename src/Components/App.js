@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalStyles } from "./GlobalStyle";
+import { GlobalStyles } from "./Global/GlobalStyle";
 import Router from "./Router";
 import { Weather } from "store";
 import axios from "axios";
@@ -7,6 +7,7 @@ import axios from "axios";
 export default class extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       main: "clear",
       country: "",
@@ -48,7 +49,7 @@ export default class extends React.Component {
     };
     setInterval(() => {
       navigator.geolocation.getCurrentPosition(success);
-    }, 1000);
+    }, 5000);
   }
   render() {
     const {
