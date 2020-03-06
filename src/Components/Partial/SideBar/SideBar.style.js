@@ -16,7 +16,7 @@ export const TodoList = styled.div.attrs({
   opacity: 0;
   transition: all ease 0.2s;
   color: white;
-
+  overflow-wrap: break-word;
   @media screen and (max-width: 1100px) {
     height: 30%;
     width: 100%;
@@ -35,7 +35,10 @@ export const TodoTheme = styled.div`
 export const ToDos = styled.div.attrs({
   id: "toDos"
 })`
-  display: grid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
   height: 100%;
   padding-left: 5px;
   font-size: 20px;

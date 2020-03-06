@@ -1,20 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
-
-const ChatFrame = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-`;
-const Chat = styled.div`
-  cursor: pointer;
-`;
-const SPAN = styled.span`
-  margin-right: 5px;
-`;
-
+import { ChatFrame, Chat, SPAN } from "./Chat.style";
 export default () => {
   console.log("chat");
 

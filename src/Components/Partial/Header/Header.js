@@ -26,7 +26,7 @@ export default () => {
       <MainInfo>
         <MainW>{country}</MainW>
         <MainS>
-          <InfoTemp>{temp}℃</InfoTemp>
+          <InfoTemp>{(temp - 273.15).toFixed(1)}℃</InfoTemp>
           <InfoMS>{weather}</InfoMS>
           <InfoMS>{city}</InfoMS>
         </MainS>

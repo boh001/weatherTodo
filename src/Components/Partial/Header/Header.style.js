@@ -21,17 +21,17 @@ export const MainW = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 35%;
   height: 100%;
-  font-size: 40px;
+  font-size: 30px;
 `;
 export const MainS = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 65%;
   flex-direction: column;
-  padding: 5px 5px 5px 0px;
+  padding: 5px 0px 5px 0px;
 `;
 export const InfoMS = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ export const InfoMS = styled.div`
   justify-content: center;
   width: 100%;
   heigth: 100%;
-  font-size: 12px;
+  font-size: 15px;
 `;
 export const InfoTemp = styled.div`
   display: flex;
