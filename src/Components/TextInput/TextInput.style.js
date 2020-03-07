@@ -12,7 +12,7 @@ export const InputLabel = styled.label`
   -webkit-transition: 0.2s ease all;
   font-size: 20px;
   opacity: 0;
-  color: #2ed573;
+  color: ${props => props.color};
 `;
 
 export const TextInput = styled.input.attrs(props => ({
@@ -25,7 +25,7 @@ export const TextInput = styled.input.attrs(props => ({
   height: 30px;
   padding-left: 10px;
   border: none;
-  color: white;
+  color: ${props => props.color};
   background-color: transparent;
   border-bottom: 1px solid;
   transition: all ease 0.5s;
@@ -42,6 +42,6 @@ export const TextInput = styled.input.attrs(props => ({
     opacity: 1;
   }
   &::placeholder {
-    color: white;
+    color: ${props => props.placeColor};
   }
 `;

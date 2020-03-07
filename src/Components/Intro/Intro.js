@@ -3,6 +3,7 @@ import { IntroFrame, IntroTheme, ThemeUl, UlSpan, UlLi } from "./Intro.style";
 export default () => {
   return (
     <IntroFrame>
+      <IntroTheme>WeatherTodo</IntroTheme>
       <ThemeUl>
         <UlSpan>Programming Language</UlSpan>
         <UlLi>Backend : NodeJS(Express)</UlLi>

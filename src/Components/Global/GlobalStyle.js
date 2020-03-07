@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
         
       };
     body{
-      font-family: serif; &:focus {
+       &:focus {
         outline: none;
       }
         

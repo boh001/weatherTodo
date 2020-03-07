@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const IntroFrame = styled.div`
-  width: 400px;
-  height: 400px;
-  background-color: yellow;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +11,7 @@ export const IntroFrame = styled.div`
 export const IntroTheme = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
