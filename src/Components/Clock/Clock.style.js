@@ -13,8 +13,8 @@ export const Frame = styled.div`
     `https://images.unsplash.com/photo-1583356016310-e6db1eb14165?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80`});
   background-size: cover;
   color: white;
-  @media screen and (max-width: 1100px) {
-    padding-top:50px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 50px;
     font-size: 40px;
     justify-content:flex-start;
   }
@@ -24,7 +24,7 @@ export const Greet = styled.div`
   margin-top: 15px;
   font-size: 40px;
   font-weight: bold;
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1024px) {
     font-size: 30px;
   }
 `;

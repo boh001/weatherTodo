@@ -7,7 +7,7 @@ export const TodoList = styled.div.attrs({
   height: 100%;
   left: 0;
   height: calc(100% - 35px);
-  width: 350px;
+  width: 300px;
   bottom: 35px;
   display: flex;
   visibility: hidden;
@@ -17,8 +17,8 @@ export const TodoList = styled.div.attrs({
   transition: all ease 0.1s;
   color: white;
   overflow-wrap: break-word;
-  @media screen and (max-width: 1100px) {
-    height: 300px;
+  @media screen and (max-width: 1024px) {
+    height: calc(100% - 500px);
     width: 100%;
   }
 `;
@@ -44,7 +44,7 @@ export const ToDos = styled.div.attrs({
   font-size: 20px;
   overflow-x: hidden;
   margin-bottom: 50px;
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: row;
     flex-wrap: wrap;
   }

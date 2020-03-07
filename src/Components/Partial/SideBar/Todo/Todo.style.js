@@ -38,4 +38,8 @@ export const Frame = styled.div`
   &:hover ${IconWrap} {
     visibility: visible;
   }
+  @media screen and (max-width: 1024px) {
+    margin-left: 10px;
+    width: 48%;
+  }
 `;
