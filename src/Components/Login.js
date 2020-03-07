@@ -9,6 +9,11 @@ const LoginFrame = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  div {
+    &:first-child {
+      margin-bottom: 70px;
+    }
+  }
 `;
 const LoginName = styled.input.attrs({
   type: "text"
@@ -18,10 +23,12 @@ const LoginName = styled.input.attrs({
 const LoginLabel = styled.label`
   position: absolute;
 `;
+
 export default () => {
   return (
     <LoginFrame>
-      <TextInput placeholder={""} label={"Name"} />
+      <TextInput placeholder={"Write your name"} label={"Name"} />
+      <TextInput placeholder={"Write your image-url"} label={"Image"} />
     </LoginFrame>
   );
 };
