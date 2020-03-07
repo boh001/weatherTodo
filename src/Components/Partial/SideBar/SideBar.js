@@ -38,7 +38,7 @@ export default React.memo(() => {
       </ToDos>
 
       <ListInput onKeyUp={e => addTodo(e)} />
-      <InputLabel>Title</InputLabel>
+      <InputLabel>TITLE</InputLabel>
     </TodoList>
   );
 });

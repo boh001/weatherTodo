@@ -9,11 +9,8 @@ const Frame = styled.div`
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  height: 10%;
+  height: 40px;
   margin-bottom: 10px;
-  overflow-wrap: break-word;
 `;
 const Checkbox = styled.input.attrs({
   type: "checkbox"
@@ -27,7 +24,10 @@ const Checkbox = styled.input.attrs({
 const TextWrap = styled.div`
   display: flex;
   align-items: center;
-  flex-wrap: no-wrap;
+  word-wrap: break-word;
+
+  word-break: break-all;
+  word-wrap: break-word;
 `;
 const IconWrap = styled.div``;
 export default ({ todo }) => {

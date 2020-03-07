@@ -11,6 +11,7 @@ const Todo = styled.div`
   cursor: pointer;
 `;
 const SPAN = styled.span`
+  font-size: 20px;
   margin: 0px 5px 0px 5px;
 `;
 

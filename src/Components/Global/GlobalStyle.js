@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background: white;
+    background: transparent;
 
   }
     

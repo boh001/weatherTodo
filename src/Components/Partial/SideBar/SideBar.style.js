@@ -44,6 +44,11 @@ export const ToDos = styled.div.attrs({
   font-size: 20px;
   font-weight: bold;
   overflow-x: hidden;
+  margin-bottom: 50px;
+  @media screen and (max-width: 1100px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 export const InputLabel = styled.label`
