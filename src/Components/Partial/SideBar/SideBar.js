@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import Todo from "./Todo";
+import Todo from "./Todo/Todo";
 import {
   TodoList,
   TodoTheme,
@@ -33,12 +33,20 @@ export default React.memo(() => {
       <TodoTheme>Today's List</TodoTheme>
       <ToDos>
         {todos.map((todo, key) => {
-          return <Todo key={key} todo={todo} />;
+          return (
+            <Todo
+              key={key}
+              id={key}
+              todo={todo}
+              todos={todos}
+              setTodos={setTodos}
+            />
+          );
         })}
       </ToDos>
 
       <ListInput onKeyUp={e => addTodo(e)} />
-      <InputLabel>TITLE</InputLabel>
+      <InputLabel>Title</InputLabel>
     </TodoList>
   );
 });

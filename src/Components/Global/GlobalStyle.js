@@ -5,10 +5,14 @@ export const GlobalStyles = createGlobalStyle`
 
     * {
         box-sizing:border-box;
-        font-family: sans-serif;
         
       };
-  
+    body{
+      font-family: serif; &:focus {
+        outline: none;
+      }
+        
+    }
       ::-webkit-scrollbar {
         
     width: 15px;
@@ -20,6 +24,15 @@ export const GlobalStyles = createGlobalStyle`
   ::-webkit-scrollbar-thumb {
     background: transparent;
 
+  }
+  input{
+    font-family:inherit;
+    border:none;
+    border-bottom:1px solid;
+    background-color:transparent;
+    &:focus {
+      outline: none;
+    }
   }
     
 `;

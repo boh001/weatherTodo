@@ -14,8 +14,9 @@ export const Frame = styled.div`
   background-size: cover;
   color: white;
   @media screen and (max-width: 1100px) {
+    padding-top:50px;
     font-size: 40px;
-    /* background-size:1100px; */
+    justify-content:flex-start;
   }
 `;
 export const Clock = styled.div``;

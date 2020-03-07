@@ -1,6 +1,18 @@
 import React from "react";
-import Clock from "Components/Clock/Clock";
-
+import styled from "styled-components";
+import Intro from "Components/Intro/Intro";
+import Login from "Components/Login";
+const BigFrame = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 export default () => {
-  return <Clock />;
+  return (
+    <BigFrame>
+      <Intro />
+      <Login />
+    </BigFrame>
+  );
 };

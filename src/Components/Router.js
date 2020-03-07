@@ -12,7 +12,7 @@ export default () => {
         <Header />
         <SideBar />
         <Switch>
-          <Route path="/Home" exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/me" exact component={Me} />
         </Switch>
         <Footer />

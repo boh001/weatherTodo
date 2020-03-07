@@ -11,11 +11,18 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  @media screen and (max-width: 1100px) {
+    width: 100px;
+    height: 75px;
+  }
 `;
 export const MainInfo = styled.div`
   display: flex;
   height: 60%;
   border-bottom: 1px solid white;
+  @media screen and (max-width: 1100px) {
+    border: none;
+  }
 `;
 export const MainW = styled.div`
   display: flex;
@@ -24,6 +31,9 @@ export const MainW = styled.div`
   width: 35%;
   height: 100%;
   font-size: 30px;
+  @media screen and (max-width: 1100px) {
+    font-size: 15px;
+  }
 `;
 export const MainS = styled.div`
   display: flex;
@@ -32,6 +42,9 @@ export const MainS = styled.div`
   width: 65%;
   flex-direction: column;
   padding: 5px 0px 5px 0px;
+  @media screen and (max-width: 1100px) {
+    justify-content: center;
+  }
 `;
 export const InfoMS = styled.div`
   display: flex;
@@ -40,6 +53,9 @@ export const InfoMS = styled.div`
   width: 100%;
   heigth: 100%;
   font-size: 15px;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 export const InfoTemp = styled.div`
   display: flex;
@@ -47,11 +63,17 @@ export const InfoTemp = styled.div`
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
+  @media screen and (max-width: 1100px) {
+    font-size: 15px;
+  }
 `;
 export const SubInfo = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 40%;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 export const InfoW = styled.div`
   display: flex;
