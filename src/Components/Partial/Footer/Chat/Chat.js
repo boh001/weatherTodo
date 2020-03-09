@@ -9,6 +9,8 @@ export default () => {
     <ChatFrame>
       <Chat>
         <FontAwesomeIcon icon={faCog} size="lg" />
+        <SPAN>Logout</SPAN>
+        <SPAN>Image</SPAN>
       </Chat>
     </ChatFrame>
   );
