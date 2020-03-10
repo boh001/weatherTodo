@@ -110,12 +110,12 @@ export default class extends React.Component {
             <SideBar />
             <Switch>
               <Route
-                path="https://boh001.github.io/weatherTodo/"
+                path="https://frosty-hoover-eb47ac.netlify.com/"
                 exact
                 component={Home}
               />
               <Route
-                path="https://boh001.github.io/weatherTodo/me"
+                path="https://frosty-hoover-eb47ac.netlify.com/me"
                 exact
                 component={Me}
               />
