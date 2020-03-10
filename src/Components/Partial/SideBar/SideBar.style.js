@@ -46,6 +46,6 @@ export const ToDos = styled.div.attrs({
   @media screen and (max-width: 1024px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    align-content: flex-start;
   }
 `;
