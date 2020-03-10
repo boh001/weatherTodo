@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/weatherTodo/static/js/main.ddf8ec63.chunk.js",
-    "main.js.map": "/weatherTodo/static/js/main.ddf8ec63.chunk.js.map",
-    "runtime-main.js": "/weatherTodo/static/js/runtime-main.7fd07078.js",
-    "runtime-main.js.map": "/weatherTodo/static/js/runtime-main.7fd07078.js.map",
-    "static/js/2.9489f757.chunk.js": "/weatherTodo/static/js/2.9489f757.chunk.js",
-    "static/js/2.9489f757.chunk.js.map": "/weatherTodo/static/js/2.9489f757.chunk.js.map",
-    "index.html": "/weatherTodo/index.html",
-    "precache-manifest.7d4a2786c23da337eb0268ea4f7042ae.js": "/weatherTodo/precache-manifest.7d4a2786c23da337eb0268ea4f7042ae.js",
-    "service-worker.js": "/weatherTodo/service-worker.js",
-    "static/js/2.9489f757.chunk.js.LICENSE.txt": "/weatherTodo/static/js/2.9489f757.chunk.js.LICENSE.txt"
+    "main.js": "/weathertodo/static/js/main.27daa979.chunk.js",
+    "main.js.map": "/weathertodo/static/js/main.27daa979.chunk.js.map",
+    "runtime-main.js": "/weathertodo/static/js/runtime-main.994e4b41.js",
+    "runtime-main.js.map": "/weathertodo/static/js/runtime-main.994e4b41.js.map",
+    "static/js/2.b2735e44.chunk.js": "/weathertodo/static/js/2.b2735e44.chunk.js",
+    "static/js/2.b2735e44.chunk.js.map": "/weathertodo/static/js/2.b2735e44.chunk.js.map",
+    "index.html": "/weathertodo/index.html",
+    "precache-manifest.3cccd8dbedb13905473aa7e38d744c50.js": "/weathertodo/precache-manifest.3cccd8dbedb13905473aa7e38d744c50.js",
+    "service-worker.js": "/weathertodo/service-worker.js",
+    "static/js/2.b2735e44.chunk.js.LICENSE.txt": "/weathertodo/static/js/2.b2735e44.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7fd07078.js",
-    "static/js/2.9489f757.chunk.js",
-    "static/js/main.ddf8ec63.chunk.js"
+    "static/js/runtime-main.994e4b41.js",
+    "static/js/2.b2735e44.chunk.js",
+    "static/js/main.27daa979.chunk.js"
   ]
 }
