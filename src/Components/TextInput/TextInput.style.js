@@ -1,5 +1,8 @@
 import styled from "styled-components";
-export const RelativeBox = styled.div`
+export const RelativeBox = styled.div.attrs(props => ({
+  id: props.id
+}))`
+  visibility: ${props => props.visible};
   position: relative;
 `;
 export const InputLabel = styled.label`
@@ -23,7 +26,7 @@ export const TextInput = styled.input.attrs(props => ({
   flex: none;
   bottom: 0;
   height: 30px;
-  padding-left: 10px;
+  padding: 10px;
   border: none;
   color: ${props => props.color};
   background-color: transparent;
@@ -37,6 +40,7 @@ export const TextInput = styled.input.attrs(props => ({
     }
   }
   &:focus ~ label {
+    color: ${props => props.labelColor};
     font-size: 20px;
     bottom: 30px;
     opacity: 1;

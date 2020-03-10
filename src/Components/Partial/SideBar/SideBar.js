@@ -1,12 +1,8 @@
 import React, { useCallback, useState } from "react";
 import Todo from "./Todo/Todo";
-import {
-  TodoList,
-  TodoTheme,
-  ToDos,
-  ListInput,
-  InputLabel
-} from "./SideBar.style";
+import { TodoList, TodoTheme, ToDos } from "./SideBar.style";
+import TextInput from "../../TextInput/TextInput";
+import { color } from "Components/Global/variable";
 
 export default React.memo(() => {
   console.log("SideBar");
@@ -44,9 +40,14 @@ export default React.memo(() => {
           );
         })}
       </ToDos>
-
-      <ListInput onKeyUp={e => addTodo(e)} />
-      <InputLabel>Title</InputLabel>
+      <TextInput
+        event={addTodo}
+        placeholder={"Write your to-do's"}
+        color={"white"}
+        label={"Title"}
+        placeColor={"white"}
+        labelColor={color.lightGreen}
+      />
     </TodoList>
   );
 });

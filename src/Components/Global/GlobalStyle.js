@@ -25,10 +25,17 @@ export const GlobalStyles = createGlobalStyle`
     background: transparent;
 
   }
+  a {
+    text-decoration:none;
+    &:visited{
+      color:inherit;
+    }
+  }
   input{
     font-family:inherit;
     border:none;
     border-bottom:1px solid;
+    color:inherit;
     background-color:transparent;
     &:focus {
       outline: none;

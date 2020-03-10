@@ -1,20 +1,42 @@
 import styled from "styled-components";
-export const ChatFrame = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-`;
+import { Link } from "react-router-dom";
+import { text } from "@fortawesome/fontawesome-svg-core";
 export const SPAN = styled.span`
-  margin: 0px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
   opacity: 0;
-  right: -50px;
   transition: all ease 1s;
 `;
 export const Chat = styled.div`
+  display: flex;
+  position: relative;
   cursor: pointer;
+  transition: all ease 1s;
+`;
+export const ChatFrame = styled.div`
+  position: absolute;
+  right: -115px;
+  transition: all ease 1s;
+  &:hover {
+    right: 10px;
+  }
   &:hover ${SPAN} {
-    font-size: 20px;
     opacity: 1;
-    width: 100%;
+  }
+`;
+export const Option = styled(Link)`
+  margin-right: 5px;
+  &:hover {
+    color: #2ed573;
+  }
+  &:after {
+    content: " /";
+    color: white;
+  }
+`;
+export const ChangeUrl = styled.div`
+  &:hover {
+    color: #2ed573;
   }
 `;
