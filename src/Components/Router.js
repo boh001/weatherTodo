@@ -109,8 +109,16 @@ export default class extends React.Component {
             <Header />
             <SideBar />
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/me" exact component={Me} />
+              <Route
+                path="https://boh001.github.io/weatherTodo/"
+                exact
+                component={Home}
+              />
+              <Route
+                path="https://boh001.github.io/weatherTodo/me"
+                exact
+                component={Me}
+              />
             </Switch>
           </Weather>
           <Footer />
