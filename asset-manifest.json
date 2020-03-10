@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/weatherTodo/static/js/main.ddf8ec63.chunk.js",
+    "main.js.map": "/weatherTodo/static/js/main.ddf8ec63.chunk.js.map",
+    "runtime-main.js": "/weatherTodo/static/js/runtime-main.7fd07078.js",
+    "runtime-main.js.map": "/weatherTodo/static/js/runtime-main.7fd07078.js.map",
+    "static/js/2.9489f757.chunk.js": "/weatherTodo/static/js/2.9489f757.chunk.js",
+    "static/js/2.9489f757.chunk.js.map": "/weatherTodo/static/js/2.9489f757.chunk.js.map",
+    "index.html": "/weatherTodo/index.html",
+    "precache-manifest.7d4a2786c23da337eb0268ea4f7042ae.js": "/weatherTodo/precache-manifest.7d4a2786c23da337eb0268ea4f7042ae.js",
+    "service-worker.js": "/weatherTodo/service-worker.js",
+    "static/js/2.9489f757.chunk.js.LICENSE.txt": "/weatherTodo/static/js/2.9489f757.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fd07078.js",
+    "static/js/2.9489f757.chunk.js",
+    "static/js/main.ddf8ec63.chunk.js"
+  ]
+}
