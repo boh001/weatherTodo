@@ -1,21 +1,8 @@
 import React, { useCallback, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
-import { Frame, DIV, TextWrap, IconWrap } from "./Todo.style";
-import styled from "styled-components";
+import { Frame, DIV, TextWrap, IconWrap, ReviseInput } from "./Todo.style";
 
-const ReviseInput = styled.input.attrs({
-  type: "text"
-})`
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid white;
-  visibility: hidden;
-  color: white;
-  font-size: 20px;
-  opacity: 0;
-`;
 export default ({ id, setTodos, todos, todo }) => {
   const textRef = useRef("");
   const inputRef = useRef("");
@@ -60,24 +47,26 @@ export default ({ id, setTodos, todos, todo }) => {
     }
   };
   return (
-    <Frame>
-      <ReviseInput
-        onKeyUp={e => ReviseTodo(e)}
-        ref={inputRef}
-        onBlur={e => {
-          e.currentTarget.style.opacity = "0";
-          textRef.current.style.opacity = "1";
-        }}
-      />
-      <TextWrap ref={textRef}>{todo}</TextWrap>
-      <DIV>
-        <IconWrap onClick={e => ReviseOpen(e)}>
-          <FontAwesomeIcon icon={faPencilAlt} size="ms" />
-        </IconWrap>
-        <IconWrap onClick={e => delTodo(e)}>
-          <FontAwesomeIcon icon={faTimes} size="lg" />
-        </IconWrap>
-      </DIV>
-    </Frame>
+    <>
+      <Frame>
+        <ReviseInput
+          onKeyUp={e => ReviseTodo(e)}
+          ref={inputRef}
+          onBlur={e => {
+            e.currentTarget.style.opacity = "0";
+            textRef.current.style.opacity = "1";
+          }}
+        />
+        <TextWrap ref={textRef}>{todo}</TextWrap>
+        <DIV>
+          <IconWrap onClick={e => ReviseOpen(e)}>
+            <FontAwesomeIcon icon={faPencilAlt} size="ms" />
+          </IconWrap>
+          <IconWrap onClick={e => delTodo(e)}>
+            <FontAwesomeIcon icon={faTimes} size="lg" />
+          </IconWrap>
+        </DIV>
+      </Frame>
+    </>
   );
 };

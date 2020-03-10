@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { color } from "../../Global/variable";
 
 export const TodoList = styled.div.attrs({
   id: "sideBar"
@@ -17,7 +16,6 @@ export const TodoList = styled.div.attrs({
   opacity: 0;
   transition: all ease 0.1s;
   color: white;
-  overflow-wrap: break-word;
   @media screen and (max-width: 1024px) {
     height: calc(100% - 500px);
     width: 100%;
@@ -37,7 +35,7 @@ export const ToDos = styled.div.attrs({
   id: "toDos"
 })`
   display: flex;
-  align-items: flex-start;
+
   justify-content: flex-start;
   flex-direction: column;
   height: 100%;
@@ -48,5 +46,6 @@ export const ToDos = styled.div.attrs({
   @media screen and (max-width: 1024px) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 `;
