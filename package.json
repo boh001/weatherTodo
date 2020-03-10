@@ -1,11 +1,6 @@
 {
   "name": "weathertodo",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/boh001/weathertodo.git"
-  },
-  "homepage": "https://boh001.github.io/weathertodo",
+  "homepage": "https://boh001.github.io/weatherTodo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
