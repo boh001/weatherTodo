@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Home from "Routes/Home";
 import Me from "Routes/Me";
 import Header from "./Partial/Header/Header";
@@ -21,13 +26,13 @@ export default class extends React.Component {
       temp: "",
       humidity: "",
       time: "",
-      greet: ""
+      greet: "",
     };
   }
   componentDidMount() {
-    const success = async pos => {
+    const success = async (pos) => {
       const {
-        coords: { latitude, longitude }
+        coords: { latitude, longitude },
       } = pos;
       const apiKey = process.env.REACT_APP_APIKEY;
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
@@ -38,8 +43,8 @@ export default class extends React.Component {
           weather,
           main: { temp, humidity },
           wind: { speed },
-          clouds: { all }
-        }
+          clouds: { all },
+        },
       } = await axios.post(url);
       const date = new Date();
       const h = date.getHours();
@@ -70,7 +75,7 @@ export default class extends React.Component {
         temp,
         humidity,
         time,
-        greet
+        greet,
       });
     };
     setInterval(() => {
@@ -88,7 +93,7 @@ export default class extends React.Component {
       temp,
       humidity,
       time,
-      greet
+      greet,
     } = this.state;
 
     return (
@@ -111,6 +116,7 @@ export default class extends React.Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/me" exact component={Me} />
+              <Redirect to="/" />
             </Switch>
           </Weather>
           <Footer />
