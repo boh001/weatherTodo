@@ -1,8 +1,8 @@
 import styled from "styled-components";
-export const RelativeBox = styled.div.attrs(props => ({
-  id: props.id
+export const RelativeBox = styled.div.attrs((props) => ({
+  id: props.id,
 }))`
-  visibility: ${props => props.visible};
+  visibility: ${(props) => props.visible};
   position: relative;
 `;
 export const InputLabel = styled.label`
@@ -15,12 +15,12 @@ export const InputLabel = styled.label`
   -webkit-transition: 0.2s ease all;
   font-size: 20px;
   opacity: 0;
-  color: ${props => props.color};
+  color: ${(props) => props.color};
 `;
 
-export const TextInput = styled.input.attrs(props => ({
+export const TextInput = styled.input.attrs((props) => ({
   type: "text",
-  placeholder: props.placeholder
+  placeholder: props.placeholder,
 }))`
   font-size: 20px;
   flex: none;
@@ -28,11 +28,12 @@ export const TextInput = styled.input.attrs(props => ({
   height: 30px;
   padding: 10px;
   border: none;
-  color: ${props => props.color};
+  color: ${(props) => props.color};
   background-color: transparent;
   border-bottom: 1px solid;
   transition: all ease 0.5s;
   border-radius: 1px;
+  z-index: 99;
   &:focus {
     outline: none;
     ::placeholder {
@@ -40,12 +41,12 @@ export const TextInput = styled.input.attrs(props => ({
     }
   }
   &:focus ~ label {
-    color: ${props => props.labelColor};
+    color: ${(props) => props.labelColor};
     font-size: 20px;
     bottom: 30px;
     opacity: 1;
   }
   &::placeholder {
-    color: ${props => props.placeColor};
+    color: ${(props) => props.placeColor};
   }
 `;
