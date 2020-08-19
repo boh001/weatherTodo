@@ -10,4 +10,4 @@
 
 |Front-End|
 |----------|
-|![image](https://user-images.githubusercontent.com/54930248/90603588-7824a400-e236-11ea-8b39-baa3c11368a6.png){: width="100" height="100"}|
+|![image](https://user-images.githubusercontent.com/54930248/90603588-7824a400-e236-11ea-8b39-baa3c11368a6.png = 250px)|
