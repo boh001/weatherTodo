@@ -8,6 +8,6 @@
 |![image](https://user-images.githubusercontent.com/54930248/90603588-7824a400-e236-11ea-8b39-baa3c11368a6.png)|![image](https://user-images.githubusercontent.com/54930248/90603709-a4d8bb80-e236-11ea-893f-bcd776419fb9.png)|![image](https://user-images.githubusercontent.com/54930248/90603715-a73b1580-e236-11ea-8237-c6259ecbb2a7.png)|
 ## 기술 스택
 
-| Front-End|
+|Front-End|
 |----------|
 |![image](https://user-images.githubusercontent.com/54930248/90603588-7824a400-e236-11ea-8b39-baa3c11368a6.png)|
